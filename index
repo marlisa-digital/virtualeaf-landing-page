@@ -399,6 +399,117 @@ footer{background:#111c19;padding:2.5rem 5%;display:flex;align-items:center;just
   </div>
 </section>
 
+</section>
+<section id="command-center">
+  <div class="cmd-grid">
+ 
+    <!-- LEFT: Copy & Features -->
+    <div class="cmd-left fu">
+      <div class="cmd-badge">Discord · Virtual Office</div>
+      <h2>Your Project Has<br>a <span>Dedicated Home</span></h2>
+      <p class="sdesc">More than just chat — every Virtualeaf client gets a structured workspace where project progress, assets, and communication are centralized in real-time.</p>
+ 
+      <div class="cmd-features">
+        <div class="cmd-feat fu">
+          <div class="cmd-feat-icon">🏠</div>
+          <div class="cmd-feat-text">
+            <h4>Dedicated Client Workspace</h4>
+            <p>Your project gets its own dedicated channel — separate, organized, and accessible only to the right people.</p>
+          </div>
+        </div>
+        <div class="cmd-feat fu">
+          <div class="cmd-feat-icon">📡</div>
+          <div class="cmd-feat-text">
+            <h4>Real-Time Progress Visibility</h4>
+            <p>See live updates from the team directly — no more waiting on delayed weekly reports.</p>
+          </div>
+        </div>
+        <div class="cmd-feat fu">
+          <div class="cmd-feat-icon">🤖</div>
+          <div class="cmd-feat-text">
+            <h4>Automated System, Zero Gaps</h4>
+            <p>Reminders, documentation, and notifications run automatically via bots — nothing ever slips through the cracks.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <a href="https://discord.gg/QgkgRwjxhz" target="_blank" class="bp fu">Explore Our Virtual Office →</a>
+    </div>
+ 
+    <!-- RIGHT: Discord UI Mockup -->
+    <div class="cmd-right fu">
+      <div class="discord-mockup">
+ 
+        <!-- Header -->
+        <div class="dc-header">
+          <span class="dc-channel-name">workspace</span>
+          <span class="dc-desc">· US project · sakhmet care</span>
+        </div>
+ 
+        <!-- Body: Sidebar + Main -->
+        <div class="dc-body">
+ 
+          <!-- Sidebar -->
+          <div class="dc-sidebar">
+            <div class="dc-category">ROOTS — Foundation</div>
+            <div class="dc-ch-item">virtualeaf-guide</div>
+            <div class="dc-ch-item">visitor-guide</div>
+ 
+            <div class="dc-category" style="margin-top:.6rem;">LEAVES — Daily Work</div>
+            <div class="dc-ch-item active">workspace</div>
+            <div class="dc-ch-item" style="padding-left:1.4rem;font-size:.67rem;">US project</div>
+            <div class="dc-ch-item" style="padding-left:1.4rem;font-size:.67rem;">sakhmet care</div>
+            <div class="dc-ch-item">forum-discussion</div>
+            <div class="dc-ch-item">client-tracker</div>
+ 
+            <div class="dc-category" style="margin-top:.6rem;">STEM — Comms</div>
+            <div class="dc-ch-item voice">Meeting Room</div>
+            <div class="dc-ch-item voice">Chill Room</div>
+          </div>
+ 
+          <!-- Main chat area -->
+          <div class="dc-main">
+            <div class="dc-message">
+              <div class="dc-avatar" style="background:#5865f2;">🤖</div>
+              <div class="dc-msg-content">
+                <div class="dc-msg-author">LeafNote <span class="dc-tag">APP</span></div>
+                <div class="dc-msg-text">
+                  <div class="dc-embed">
+                    <div class="dc-embed-title">📌 Project Update — Sakhmet Care</div>
+                    <div class="dc-embed-text">Website audit complete. Funnel strategy doc uploaded to #assets.<br><span class="dc-tag dc-tag-green">✓ on track</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="dc-message">
+              <div class="dc-avatar" style="background:#5f8671;">M</div>
+              <div class="dc-msg-content">
+                <div class="dc-msg-author" style="color:#5f8671;">Marlisa <span style="font-size:.6rem;color:#949ba4;">· Virtualeaf Staff</span></div>
+                <div class="dc-msg-text">This week's report is ready. Client can check the thread below 👇</div>
+              </div>
+            </div>
+ 
+            <div class="dc-message">
+              <div class="dc-avatar" style="background:#f0a500;">D</div>
+              <div class="dc-msg-content">
+                <div class="dc-msg-author" style="color:#f0a500;">Donna</div>
+                <div class="dc-msg-text">Q2 content calendar drafted, ready for review 🌿</div>
+              </div>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+ 
+      <!-- Floating labels -->
+      <div class="cmd-float cmd-float-1">🔒 Private & Organized</div>
+      <div class="cmd-float cmd-float-2">⚡ Real-time Updates</div>
+    </div>
+ 
+  </div>
+</section>
+
 <section id="services">
   <p class="lbl">What We Do</p>
   <h2>Our Core Services</h2>
@@ -525,116 +636,7 @@ footer{background:#111c19;padding:2.5rem 5%;display:flex;align-items:center;just
       <div class="ecc fu"><span class="em">📊</span><h3>Custom Data Modeling</h3><p>Beyond standard metrics. We use custom modeling to audit raw data, delivering clean and verified insights to fuel your growth.</p></div>
     </div>
   </div>
-</section>
-<section id="command-center">
-  <div class="cmd-grid">
- 
-    <!-- LEFT: Copy & Features -->
-    <div class="cmd-left fu">
-      <div class="cmd-badge">Discord · Virtual Office</div>
-      <h2>Your Project Has<br>a <span>Dedicated Home</span></h2>
-      <p class="sdesc">More than just chat — every Virtualeaf client gets a structured workspace where project progress, assets, and communication are centralized in real-time.</p>
- 
-      <div class="cmd-features">
-        <div class="cmd-feat fu">
-          <div class="cmd-feat-icon">🏠</div>
-          <div class="cmd-feat-text">
-            <h4>Dedicated Client Workspace</h4>
-            <p>Your project gets its own dedicated channel — separate, organized, and accessible only to the right people.</p>
-          </div>
-        </div>
-        <div class="cmd-feat fu">
-          <div class="cmd-feat-icon">📡</div>
-          <div class="cmd-feat-text">
-            <h4>Real-Time Progress Visibility</h4>
-            <p>See live updates from the team directly — no more waiting on delayed weekly reports.</p>
-          </div>
-        </div>
-        <div class="cmd-feat fu">
-          <div class="cmd-feat-icon">🤖</div>
-          <div class="cmd-feat-text">
-            <h4>Automated System, Zero Gaps</h4>
-            <p>Reminders, documentation, and notifications run automatically via bots — nothing ever slips through the cracks.</p>
-          </div>
-        </div>
-      </div>
- 
-      <a href="https://discord.gg/QgkgRwjxhz" target="_blank" class="bp fu">Explore Our Virtual Office →</a>
-    </div>
- 
-    <!-- RIGHT: Discord UI Mockup -->
-    <div class="cmd-right fu">
-      <div class="discord-mockup">
- 
-        <!-- Header -->
-        <div class="dc-header">
-          <span class="dc-channel-name">workspace</span>
-          <span class="dc-desc">· US project · sakhmet care</span>
-        </div>
- 
-        <!-- Body: Sidebar + Main -->
-        <div class="dc-body">
- 
-          <!-- Sidebar -->
-          <div class="dc-sidebar">
-            <div class="dc-category">ROOTS — Foundation</div>
-            <div class="dc-ch-item">virtualeaf-guide</div>
-            <div class="dc-ch-item">visitor-guide</div>
- 
-            <div class="dc-category" style="margin-top:.6rem;">LEAVES — Daily Work</div>
-            <div class="dc-ch-item active">workspace</div>
-            <div class="dc-ch-item" style="padding-left:1.4rem;font-size:.67rem;">US project</div>
-            <div class="dc-ch-item" style="padding-left:1.4rem;font-size:.67rem;">sakhmet care</div>
-            <div class="dc-ch-item">forum-discussion</div>
-            <div class="dc-ch-item">client-tracker</div>
- 
-            <div class="dc-category" style="margin-top:.6rem;">STEM — Comms</div>
-            <div class="dc-ch-item voice">Meeting Room</div>
-            <div class="dc-ch-item voice">Chill Room</div>
-          </div>
- 
-          <!-- Main chat area -->
-          <div class="dc-main">
-            <div class="dc-message">
-              <div class="dc-avatar" style="background:#5865f2;">🤖</div>
-              <div class="dc-msg-content">
-                <div class="dc-msg-author">LeafNote <span class="dc-tag">APP</span></div>
-                <div class="dc-msg-text">
-                  <div class="dc-embed">
-                    <div class="dc-embed-title">📌 Project Update — Sakhmet Care</div>
-                    <div class="dc-embed-text">Website audit complete. Funnel strategy doc uploaded to #assets.<br><span class="dc-tag dc-tag-green">✓ on track</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
- 
-            <div class="dc-message">
-              <div class="dc-avatar" style="background:#5f8671;">M</div>
-              <div class="dc-msg-content">
-                <div class="dc-msg-author" style="color:#5f8671;">Marlisa <span style="font-size:.6rem;color:#949ba4;">· Virtualeaf Staff</span></div>
-                <div class="dc-msg-text">This week's report is ready. Client can check the thread below 👇</div>
-              </div>
-            </div>
- 
-            <div class="dc-message">
-              <div class="dc-avatar" style="background:#f0a500;">D</div>
-              <div class="dc-msg-content">
-                <div class="dc-msg-author" style="color:#f0a500;">Donna</div>
-                <div class="dc-msg-text">Q2 content calendar drafted, ready for review 🌿</div>
-              </div>
-            </div>
-          </div>
- 
-        </div>
-      </div>
- 
-      <!-- Floating labels -->
-      <div class="cmd-float cmd-float-1">🔒 Private & Organized</div>
-      <div class="cmd-float cmd-float-2">⚡ Real-time Updates</div>
-    </div>
- 
-  </div>
-</section>
+
 <section id="tools">
   <div class="fu" style="text-align:center;">
     <p class="lbl">Tools We Use</p>
