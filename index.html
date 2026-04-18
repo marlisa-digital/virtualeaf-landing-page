@@ -294,7 +294,63 @@ footer{background:#111c19;padding:2.5rem 5%;display:flex;align-items:center;just
 .cmd-float-1{top:-16px;right:20px;animation-delay:.5s;}
 .cmd-float-2{bottom:-16px;left:20px;animation-delay:2s;}
 .cmd-float::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--vi);}
-  
+
+/* === TOOLS SECTION === */
+#tools {
+  background: var(--wh);
+  padding: 6rem 5%;
+  text-align: center;
+}
+.tg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 3rem;
+}
+.tc2 {
+  background: var(--cr);
+  border: 1px solid var(--my);
+  border-radius: 16px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+  min-width: 110px;
+  transition: all .3s;
+}
+.tc2:hover {
+  border-color: var(--op);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(95,134,113,.1);
+}
+.tc2.feat {
+  border-color: var(--vi);
+  background: var(--mi);
+}
+.ti2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+.tn {
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--tx);
+  text-align: center;
+}
+.tbadge {
+  font-size: .62rem;
+  font-weight: 700;
+  background: var(--vi);
+  color: #fff;
+  padding: .2rem .6rem;
+  border-radius: 100px;
+  letter-spacing: .06em;
+}
 </style>
 </head>
 <body>
