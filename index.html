@@ -70,64 +70,76 @@ h2{font-size:clamp(2rem,3.5vw,2.8rem);font-weight:700;color:var(--dk);line-heigh
 .vc p{font-size:.82rem;color:var(--mu);line-height:1.7;}
 
 /* CSS SPESIFIK UNTUK CASE STUDY */
-.cs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1100px;
-  margin: 3rem auto 0;
-}
-.cs-card {
-  background: var(--wh);
-  border: 1px solid var(--my);
-  border-radius: 20px;
-  padding: 2.5rem;
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  transition: all 0.4s ease;
-}
-.cs-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(44, 74, 62, 0.08);
-  border-color: var(--op);
-  background: var(--mi);
-}
-.cs-tag {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background: var(--mi);
-  color: var(--vi);
-  padding: 0.4rem 0.8rem;
-  border-radius: 30px;
-  align-self: flex-start;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
-}
-.cs-card h3 { font-size: 1.4rem; color: var(--dk); margin-bottom: 1rem; letter-spacing:-0.5px; }
-.cs-card p { font-size: 0.95rem; color: var(--sl); flex-grow: 1; margin-bottom: 2rem; line-height: 1.6;}
-.cs-link {
-  font-weight: 600; color: var(--vi); font-size: 0.9rem;
-  display: flex; align-items: center; gap: 0.5rem; transition: 0.3s;
-}
+.cs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1100px; margin: 3rem auto 0; }
+.cs-card { background: var(--wh); border: 1px solid var(--my); border-radius: 20px; text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: all 0.4s ease; overflow: hidden; }
+.cs-card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(44, 74, 62, 0.08); border-color: var(--op); }
+.cs-image { width: 100%; height: 220px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--my); transition: 0.4s ease; }
+.cs-card:hover .cs-image { opacity: 0.9; }
+.cs-content { padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; }
+.cs-tag { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; background: var(--mi); color: var(--vi); padding: 0.4rem 0.8rem; border-radius: 30px; align-self: flex-start; margin-bottom: 1.2rem; font-weight: 700; }
+.cs-content h3 { font-size: 1.4rem; color: var(--dk); margin-bottom: 0.8rem; letter-spacing:-0.5px; }
+.cs-content p { font-size: 0.95rem; color: var(--sl); flex-grow: 1; margin-bottom: 2rem; line-height: 1.6;}
+.cs-link { font-weight: 600; color: var(--vi); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; transition: 0.3s; margin-top: auto;}
 .cs-card:hover .cs-link { color: var(--dk); gap: 0.8rem; }
-#services{background:var(--wh);position:relative;overflow:hidden;}
-#services::before{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background-image:radial-gradient(circle,rgba(170,196,190,.06) 1.5px,transparent 1.5px);background-size:24px 24px;pointer-events:none;}
-#services .lbl{color:var(--sl);}
-#services h2{color:var(--dk);}
-#services .sdesc{color:var(--mu);}
-.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem;}
-.sc{background:var(--cr);border:1px solid var(--my);border-radius:20px;padding:2.5rem 2rem;transition:all .3s;position:relative;overflow:hidden;}
-.sc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--sl),var(--op));opacity:0;transition:opacity .3s;}
-.sc:hover{background:var(--mi);border-color:var(--op);transform:translateY(-6px);}
-.sc:hover::before{opacity:1;}
-.snum{font-size:3rem;font-weight:800;color:rgba(95,134,113,.12);margin-bottom:.5rem;display:block;}
-.sc h3{font-weight:700;font-size:1.2rem;color:var(--dk);margin-bottom:.8rem;}
-.sc p{font-size:.85rem;color:var(--mu);line-height:1.75;margin-bottom:1.5rem;}
-.stags{display:flex;flex-wrap:wrap;gap:.4rem;}
-.stag{background:var(--mi);color:var(--sl);font-size:.68rem;font-weight:600;padding:.3rem .7rem;border-radius:100px;}
+
+#booking-section { background: var(--dk); padding: 5rem 5%; color: var(--wh); border-radius: 24px; margin: 4rem 5%; }
+.booking-container { max-width: 900px; width: 100%; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.booking-left { display: flex; flex-direction: column; gap: 20px; }
+.booking-left h2 { font-size: 2.2rem; margin: 0; line-height: 1.1; font-weight: 600; letter-spacing: -1px; color: var(--wh);}
+.booking-left p { color: var(--op); font-size: 1rem; line-height: 1.5; margin-bottom: 10px; }
+.booking-left .next-steps { font-size: 0.75rem; color: var(--sl); margin-bottom: 6px; letter-spacing: 1px; font-weight: 600; text-transform: uppercase;}
+.booking-left .step-item { display: flex; gap: 10px; padding: 6px 0; font-size: 0.85rem; color: var(--mi); align-items: flex-start; }
+.booking-left .step-item span { color: var(--vi); margin-top: 1px; }
+
+.booking-right { background: var(--wh); border-radius: 16px; padding: 2rem; color: var(--dk); }
+.form-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--my); padding-bottom: 15px; margin-bottom: 20px;}
+.form-header h3 { font-size: 1rem; margin: 0; font-weight: 600;}
+.form-header .step-indicator { font-size: 0.8rem; color: var(--sl); }
+.back-btn { background: none; border: none; color: var(--sl); cursor: pointer; font-size: 0.8rem; padding: 0; font-weight: 600;}
+.back-btn:hover { color: var(--dk); }
+
+.form-field { display: flex; flex-direction: column; gap: 8px; margin-bottom: 15px; }
+.form-field label { font-size: 0.75rem; color: var(--sl); letter-spacing: 1px; font-weight: 600; text-transform: uppercase;}
+.form-input { padding: 12px; background: var(--cr); border: 1px solid var(--my); border-radius: 8px; color: var(--dk); font-size: 0.9rem; font-family: inherit;}
+.form-input:focus { outline: none; border-color: var(--vi); background: var(--wh); }
+.form-input::placeholder { color: #a0a0a0; }
+
+.slots-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.slot-btn { padding: 10px; background: var(--cr); border: 1px solid var(--my); border-radius: 8px; color: var(--dk); cursor: pointer; font-size: 0.85rem; transition: 0.2s; font-family: inherit; font-weight: 600;}
+.slot-btn:hover { border-color: var(--vi); color: var(--vi); }
+.slot-btn.active { background: var(--vi); color: var(--wh); border-color: var(--vi); }
+
+.submit-btn { padding: 14px; background: var(--dk); color: var(--wh); border: none; border-radius: 8px; font-size: 0.85rem; font-weight: 600; cursor: pointer; margin-top: 10px; transition: 0.3s; width: 100%; font-family: inherit;}
+.submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.submit-btn:hover:not(:disabled) { background: var(--vi); }
+
+.success-message { text-align: center; padding: 40px 20px; }
+.b-step { display: none; }
+.b-step.active { display: block; animation: fadeUp 0.4s ease forwards; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="logo">Virtual<span>eaf</span></a>
+  <div class="nl">
+    <a href="#about">About</a>
+    <a href="#casestudy">Case Study</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#booking-section">Contact</a>
+    <a href="https://discord.gg/QgkgRwjxhz" target="_blank">Discord</a>
+    <a href="#booking-section" class="btn-nav">Book a Call</a>
+  </div>
+</nav>
+
+<header>
+  <span class="tag fu">Digital Agency & Virtual Office</span>
+  <h1 class="fu">Streamlining Your Growth,<br>Virtually.</h1>
+  <p class="st fu">We help wellness brands and service-based businesses build high-converting digital marketing systems — from strategy to execution.</p>
+  <a href="#casestudy" class="btn fu">See Our Work <span>→</span></a>
+</header>
 
 #pricing{background:var(--cr);}
 .ph{text-align:center;margin-bottom:4rem;}
@@ -567,37 +579,237 @@ footer{background:#111c19;padding:2.5rem 5%;display:flex;align-items:center;just
 </section>
 
 <!-- BAGIAN TAMBAHAN: CASE STUDY -->
-<section id="casestudy" style="background:var(--wh);">
+<section id="casestudy" style="background: rgba(120, 153, 148, 0.12);">
   <div class="ts fu">
     <span class="tag">Our Work</span>
     <h2>Case Studies</h2>
-    <p class="sdesc" style="margin: 0 auto;">Jelajahi bagaimana kami membantu bisnis berkembang melalui strategi digital yang terukur dan infrastruktur yang efisien.</p>
+    <p class="sdesc" style="margin: 0 auto;">Explore how we help businesses scale through measurable digital strategies and efficient infrastructure.</p>
   </div>
   
   <div class="cs-grid">
     <a href="https://bakery-bliss-case.netlify.app" target="_blank" class="cs-card fu">
-      <span class="cs-tag">F&B / Local Business</span>
-      <h3>Bliss Bakery Shop</h3>
-      <p>Pertumbuhan reach organik dan peningkatan kunjungan toko fisik (in-store foot traffic) melalui strategi konten Instagram yang relevan dengan audiens lokal.</p>
-      <div class="cs-link">Baca Case Study <span>→</span></div>
+      <div class="cs-image" style="background: #fdf6ed;"><span style="font-size: 4rem;">🥐</span></div>
+      <div class="cs-content">
+        <span class="cs-tag">F&B / Local Business</span>
+        <h3>Bliss Bakery Shop</h3>
+        <p>Organic reach growth and increased in-store foot traffic through localized Instagram content strategies.</p>
+        <div class="cs-link">Read Case Study <span>→</span></div>
+      </div>
     </a>
 
     <a href="https://bloom-detox-case.netlify.app" target="_blank" class="cs-card fu">
-      <span class="cs-tag">Wellness / E-Commerce</span>
-      <h3>Desert Bloom Detox</h3>
-      <p>Strategi omnichannel mencakup Meta Ads, LinkedIn, dan Instagram Reels untuk menyasar audiens premium di market US dan Asia.</p>
-      <div class="cs-link">Baca Case Study <span>→</span></div>
+      <div class="cs-image" style="background: #f4efe9;"><span style="font-size: 4rem;">🌿</span></div>
+      <div class="cs-content">
+        <span class="cs-tag">Wellness / E-Commerce</span>
+        <h3>Desert Bloom Detox</h3>
+        <p>Omnichannel strategy across Meta Ads, LinkedIn, and Instagram Reels targeting premium audiences in the US and Asia.</p>
+        <div class="cs-link">Read Case Study <span>→</span></div>
+      </div>
     </a>
     
     <a href="https://discord-command-center.netlify.app" target="_blank" class="cs-card fu">
-      <span class="cs-tag">Infrastructure & Setup</span>
-      <h3>Discord Command Center</h3>
-      <p>Sistem virtual office all-in-one yang kami rancang di Discord. Menggantikan email, Trello, dan WhatsApp untuk manajemen agensi yang rapi.</p>
-      <div class="cs-link">Lihat Fitur Infrastruktur <span>→</span></div>
+      <div class="cs-image" style="background: #eef0f3;"><span style="font-size: 4rem;">💬</span></div>
+      <div class="cs-content">
+        <span class="cs-tag">Infrastructure & Setup</span>
+        <h3>Discord Command Center</h3>
+        <p>An all-in-one virtual office system designed in Discord, replacing email, Trello, and WhatsApp for streamlined management.</p>
+        <div class="cs-link">View Infrastructure <span>→</span></div>
+      </div>
     </a>
   </div>
 </section>
 
+<!-- BAGIAN ASLI DARI SINI -->
+<section id="about">
+  <div class="g2">
+    <div class="tx fu">
+      <span class="tag">Who We Are</span>
+      <h2 class="stitle">More than an agency. We're your operational partner.</h2>
+      <p class="sdesc">Banyak agensi hanya fokus pada konten. Kami fokus pada infrastruktur. Kami memastikan sistem pemasaran, manajemen klien, dan delegasi tugas berjalan lancar tanpa Anda harus mengurus detail teknis harian.</p>
+      <ul class="lk">
+        <li><span>✓</span> <strong>Clear Systems:</strong> SOP dan tracker terstruktur untuk setiap project.</li>
+        <li><span>✓</span> <strong>Data-Driven:</strong> Keputusan berdasarkan analitik, bukan sekadar insting.</li>
+        <li><span>✓</span> <strong>Scalable:</strong> Infrastruktur yang siap tumbuh seiring bisnis Anda.</li>
+      </ul>
+    </div>
+    <div class="im fu">
+      <h3 style="font-size:1.6rem;color:var(--dk);margin-bottom:1rem;letter-spacing:-1px;">Built on Structure</h3>
+      <p style="color:var(--sl);font-size:.95rem;line-height:1.6;">Kami percaya bahwa kreativitas membutuhkan fondasi yang kuat. Tanpa sistem, ide brilian akan hilang dalam eksekusi yang berantakan.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="bg">
+  <div class="ts fu">
+    <span class="tag">Our Expertise</span>
+    <h2>How We Can Help</h2>
+    <p class="sdesc" style="margin:0 auto;">Layanan end-to-end untuk memperkuat presensi digital dan merapikan operasional bisnis Anda.</p>
+  </div>
+  <div class="gc">
+    <div class="cd fu">
+      <div class="ci">📱</div>
+      <h3>Social Media Management</h3>
+      <p style="color:var(--sl);font-size:.95rem;line-height:1.6;">Perencanaan konten organik, desain grafis, dan manajemen komunitas untuk membangun audiens yang loyal dan terkonversi.</p>
+    </div>
+    <div class="cd fu">
+      <div class="ci">🎯</div>
+      <h3>Paid Ads (Meta & Google)</h3>
+      <p style="color:var(--sl);font-size:.95rem;line-height:1.6;">Kampanye iklan berbayar yang ditargetkan secara spesifik untuk meningkatkan lead generation dan penjualan langsung.</p>
+    </div>
+    <div class="cd fu">
+      <div class="ci">⚙️</div>
+      <h3>Business Automation Setup</h3>
+      <p style="color:var(--sl);font-size:.95rem;line-height:1.6;">Mengatur sistem otomatisasi (Zapier, Notion, Discord bots) agar Anda tidak perlu mengerjakan tugas repetitif secara manual.</p>
+    </div>
+    <div class="cd fu">
+      <div class="ci">🎨</div>
+      <h3>Web & Funnel Design</h3>
+      <p style="color:var(--sl);font-size:.95rem;line-height:1.6;">Pembuatan landing page dan sales funnel berkonversi tinggi yang terintegrasi dengan email marketing.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="ts fu">
+    <span class="tag">Investment</span>
+    <h2>Transparent Pricing</h2>
+    <p class="sdesc" style="margin:0 auto;">Pilih struktur kerja sama yang paling sesuai dengan fase pertumbuhan bisnis Anda.</p>
+  </div>
+  <div class="pf">
+    <div class="pc fu">
+      <h3>Project-Based</h3>
+      <div class="pr">Custom <span>/project</span></div>
+      <p style="color:var(--sl);font-size:.95rem;margin-bottom:1.5rem;">Ideal untuk kebutuhan spesifik satu kali (one-off) dengan deliverables yang jelas.</p>
+      <ul class="p-lk">
+        <li>Web / Funnel Setup <span>✓</span></li>
+        <li>System Infrastructure Build <span>✓</span></li>
+        <li>Campaign Launch <span>✓</span></li>
+        <li>Full Handover <span>✓</span></li>
+      </ul>
+      <a href="#booking-section" class="btn" style="width:100%;justify-content:center;background:var(--cr);color:var(--dk);border:1px solid var(--my);">Request Quote</a>
+    </div>
+    <div class="pc fu" style="border-color:var(--vi);position:relative;">
+      <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--vi);color:var(--wh);font-size:.7rem;font-weight:700;padding:.3rem 1rem;border-radius:50px;letter-spacing:1px;text-transform:uppercase;">Most Popular</div>
+      <h3>Retainer Model</h3>
+      <div class="pr">$1.5k+ <span>/month</span></div>
+      <p style="color:var(--sl);font-size:.95rem;margin-bottom:1.5rem;">Kemitraan jangka panjang di mana kami bertindak sebagai perpanjangan tangan tim Anda.</p>
+      <ul class="p-lk">
+        <li>Continuous Management <span>✓</span></li>
+        <li>Monthly Strategy Reviews <span>✓</span></li>
+        <li>Dedicated Discord Channel <span>✓</span></li>
+        <li>Priority Support <span>✓</span></li>
+      </ul>
+      <a href="#booking-section" class="btn" style="width:100%;justify-content:center;">Book a Fit Call</a>
+    </div>
+  </div>
+</section>
+
+<!-- BAGIAN TAMBAHAN: BOOKING -->
+<section id="booking-section" class="fu">
+  <div class="booking-container">
+    <div class="booking-left">
+      <h2>Book a free<br>discovery call.</h2>
+      <p>Select a time for us to discuss your goals and how we can support your business growth.</p>
+      <div class="next-steps">WHAT HAPPENS NEXT</div>
+      <div class="step-item"><span>✦</span> Our team reviews your needs before the session</div>
+      <div class="step-item"><span>✦</span> 30-minute session via Google Meet or WhatsApp Call</div>
+      <div class="step-item"><span>✦</span> You'll receive actionable strategy recommendations</div>
+      <div class="step-item"><span>✦</span> No pressure to purchase a package right away</div>
+    </div>
+
+    <div class="booking-right">
+      <!-- Step 1: Schedule -->
+      <div id="b-step-1" class="b-step active">
+        <div class="form-header">
+          <h3>Schedule</h3>
+          <span class="step-indicator">Step 1 of 2</span>
+        </div>
+        
+        <div class="form-field" style="margin-top: 15px;">
+          <label>TIMEZONE</label>
+          <select class="form-input" id="b-tz">
+            <option value="7">Jakarta / WIB (UTC+7)</option>
+            <option value="8">Singapore / SGT (UTC+8)</option>
+            <option value="-5">New York / EST (UTC-5)</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label>SELECT DATE</label>
+          <input type="date" class="form-input" id="b-date">
+        </div>
+
+        <div class="form-field" id="b-slots-container" style="display: none;">
+          <label>AVAILABLE SLOTS</label>
+          <div class="slots-grid" id="b-slots"></div>
+        </div>
+
+        <button class="submit-btn" id="btn-next" disabled>CONTINUE TO DETAILS</button>
+      </div>
+
+      <!-- Step 2: Details -->
+      <div id="b-step-2" class="b-step">
+        <div class="form-header">
+          <button class="back-btn" id="btn-back">← Back</button>
+          <h3>Your Details</h3>
+        </div>
+
+        <div class="form-field" style="margin-top: 15px;">
+          <input type="text" class="form-input" id="b-name" placeholder="Name" required>
+        </div>
+        <div class="form-field">
+          <input type="email" class="form-input" id="b-email" placeholder="Email" required>
+        </div>
+        <div class="form-field">
+          <input type="text" class="form-input" id="b-biz" placeholder="Business Name / Link">
+        </div>
+        <div class="form-field">
+          <textarea class="form-input" id="b-notes" rows="3" placeholder="What are your main goals right now?"></textarea>
+        </div>
+
+        <button class="submit-btn" id="btn-confirm">CONFIRM BOOKING</button>
+      </div>
+
+      <!-- Step 3: Success -->
+      <div id="b-step-3" class="b-step">
+        <div class="success-message">
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: var(--dk);">Booking Confirmed!</h3>
+          <p style="color: var(--sl); font-size: 0.9rem; margin-bottom: 20px;">
+            We've received your request for <br>
+            <strong id="res-date" style="color: var(--dk);"></strong> at <strong id="res-time" style="color: var(--dk);"></strong>.<br>
+            Check your email for the meeting link.
+          </p>
+          <button class="slot-btn" onclick="location.reload()" style="width: auto; padding: 10px 20px;">Book Another Session</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BAGIAN ASLI LANJUTAN -->
+<section class="ct">
+  <div class="fu">
+    <h2>Ready to fix your funnel?</h2>
+    <p>Mari kita rancang sistem yang bekerja sekeras Anda bekerja.</p>
+    <a href="#booking-section" class="cb">Let's Talk <span>→</span></a>
+  </div>
+</section>
+
+<footer>
+  <p class="fb2"><span>Virtualeaf</span> · Streamlining Your Growth, Virtually</p>
+  <div class="fl">
+    <a href="#about">About</a>
+    <a href="#casestudy">Case Study</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#booking-section">Contact</a>
+    <a href="https://discord.gg/QgkgRwjxhz" target="_blank">Discord</a>
+  </div>
+  <p style="font-size:.72rem;color:rgba(255,255,255,.2);">© 2026 Virtualeaf. All rights reserved.</p>
+</footer>
+
+<script>
 <section id="services">
   <p class="lbl">What We Do</p>
   <h2>Our Core Services</h2>
